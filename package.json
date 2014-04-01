@@ -13,10 +13,10 @@
     "Gregg Caines <gregg@caines.ca> (http://caines.ca)"
   ],
   "dependencies": {
-    "urlgrey": "0.3.2",
-    "jshint": "^2.4.4"
+    "urlgrey": "0.3.2"
   },
   "devDependencies": {
+    "jshint": "2.4.4",
     "istanbul": "0.2.7",
     "hottap": "1.0.1",
     "connect": "2.7.8",
