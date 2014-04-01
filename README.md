@@ -19,10 +19,32 @@ name.
 		http.createServer(app).listen(3000);
 ```
 
-### To have the urlgrey object mapped to a different name than req.uri:
+### To specify a protocol for the urlgrey object to use:
+
+#### specify it as a string:
+```javascript
+  	app.use(urlgreyConnect("http"));  // all links will be http
+```
+
+
+#### specify it as a function:
+```javascript
+    var protocolFunction = function(req){
+      // always takes a request as its only parameter
+      return req.headers['x-forwarded-proto'] ||
+             req.headers['x-forwarded-protocol'] ||
+             'http';
+    };
+  	app.use(urlgreyConnect(protocolFunction, "othername"));  
+    /* the protocol for all links will depend on the headers 
+       in the request object. */
+```
+
+
+### To have the urlgrey object mapped to a different name than req.uri, provide the name as a second parameter:
 
 ```javascript
-  	app.use(urlgreyConnect("othername"));  // it will be available as req.othername
+  	app.use(urlgreyConnect("http", "othername"));  // it will be available as req.othername
 ```
 
 See the [urlgrey](https://github.com/cainus/urlgrey) docs for urlgrey usage. 
