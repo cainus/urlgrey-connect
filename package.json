@@ -2,7 +2,7 @@
   "name": "urlgrey-connect",
   "description": "[![Build Status](https://secure.travis-ci.org/cainus/urlgrey-connect.png?branch=master)](http://travis-ci.org/cainus/urlgrey-connect) [![Coverage Status](https://coveralls.io/repos/cainus/urlgrey-connect/badge.png?branch=master)](https://coveralls.io/r/cainus/urlgrey-connect) [![NPM version](https://badge.fury.io/js/urlgrey-connect.png)](http://badge.fury.io/js/urlgrey-connect)",
   "keywords": [],
-  "version": "0.2.2",
+  "version": "0.2.3",
   "bugs": {
     "url": "https://github.com/cainus/urlgrey-connect/issues"
   },
@@ -13,7 +13,7 @@
     "Gregg Caines <gregg@caines.ca> (http://caines.ca)"
   ],
   "dependencies": {
-    "urlgrey": "0.4.0"
+    "urlgrey": "0.4.2"
   },
   "devDependencies": {
     "jshint": "2.4.4",
