@@ -13,7 +13,7 @@
     "Gregg Caines <gregg@caines.ca> (http://caines.ca)"
   ],
   "dependencies": {
-    "urlgrey": "0.4.3"
+    "urlgrey": "0.4.4"
   },
   "devDependencies": {
     "jshint": "2.4.4",
